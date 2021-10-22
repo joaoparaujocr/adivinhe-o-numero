@@ -59,7 +59,7 @@ function dica(numUser, numRandom) {
     }
 
     if (numUser === numberRandom) {
-        return createP(divDica, 'Parabéns você ganhou!', 'green')
+        return createP(divDica, 'Parabéns você acertou!', 'green')
     }
 }
 
