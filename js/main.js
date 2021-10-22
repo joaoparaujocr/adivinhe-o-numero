@@ -21,6 +21,10 @@ button.addEventListener('click', (e) => {
             buttonAgain();
             divDica.innerText = 'Número de tentativas esgotado';
         }
+        
+        if(ganhou){
+            buttonAgain();
+        }
     }
     numberUser.value = ''
 })
