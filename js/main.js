@@ -29,9 +29,15 @@ button.addEventListener('click', (e) => {
     numberUser.value = ''
 })
 
-tryAgain.addEventListener('click', function () {
+if (tryAgain) {
+    tryAgain.addEventListener('click', function () {
     location.reload();
-})
+    })
+}
+
+// tryAgain.addEventListener('click', function () {
+//     location.reload();
+// })
 
 function historico(number) {
     if (number && number > 0 && number <= 100 && numeroTentativas !== 0) {
