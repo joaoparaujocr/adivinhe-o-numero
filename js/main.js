@@ -19,7 +19,7 @@ button.addEventListener('click', (e) => {
         spanTentativas.innerText = numeroTentativas;
         if (numeroTentativas === 0 && !ganhou) {
             buttonAgain();
-            divDica.innerText = 'Número de tentativas esgotada';
+            dica(numberUser, numberRandom);
         }
         
         if(ganhou){
@@ -43,6 +43,10 @@ function historico(number) {
 }
 
 function dica(numUser, numRandom) {
+    if (numeroTentativas === 0){
+        return createP(divDica, 'Número de tentativas esgotada', 'red')
+    }
+    
     if (!numUser) {
         return createP(divDica, 'Digite um NÚMERO!', 'red')
     }
