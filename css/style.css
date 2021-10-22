@@ -68,7 +68,7 @@ button:hover{
     font-size: 20px;
 }
 
-p.red{
+.red{
     background-color: rgb(209, 76, 76);
     display: inline-block;
     padding: 2px 20px;
