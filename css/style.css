@@ -58,8 +58,16 @@ form button{
     font-weight: 600;
 }
 
-button:hover{
+button#button:hover{
     background-color: #0b815e;
+}
+
+button#tentar-novamente.red:hover{
+    background-color: rgb(185, 0, 0);
+}
+
+button#tentar-novamente.red{
+    background-color: rgb(255, 0, 0);
 }
 
 #dica{
@@ -69,7 +77,7 @@ button:hover{
 }
 
 .red{
-    background-color: rgb(209, 76, 76);
+    background-color: rgb(168, 0, 0);
     display: inline-block;
     padding: 2px 20px;
     border-radius: 4px;
