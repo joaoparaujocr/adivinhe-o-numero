@@ -76,6 +76,7 @@ function buttonAgain() {
     botao.parentNode.removeChild(botao);
     const botaoNew = document.createElement('button');
     botaoNew.setAttribute('id', 'tentar-novamente');
+    botaoNew.classList.add('red');
     botaoNew.innerText = 'Tentar Novamente';
     form.appendChild(botaoNew);
 }
