@@ -19,7 +19,7 @@ button.addEventListener('click', (e) => {
         spanTentativas.innerText = numeroTentativas;
         if (numeroTentativas === 0 && !ganhou) {
             buttonAgain();
-            divDica.innerText = 'Número de tentativas esgotado';
+            divDica.innerText = 'Número de tentativas esgotada';
         }
         
         if(ganhou){
