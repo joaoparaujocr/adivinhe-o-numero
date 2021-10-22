@@ -14,9 +14,10 @@ button.addEventListener('click', (e) => {
     if (numeroTentativas > 0) {
         const valueNumberUser = Number(numberUser.value);
         dica(valueNumberUser, numberRandom);
+        let ganhou = valueNumberUser === numberRandom;
         historico(valueNumberUser);
         spanTentativas.innerText = numeroTentativas;
-        if (numeroTentativas === 0) {
+        if (numeroTentativas === 0 && !ganhou) {
             buttonAgain();
             divDica.innerText = 'Número de tentativas esgotado';
         }
